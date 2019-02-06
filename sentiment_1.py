@@ -16,7 +16,7 @@ import sys
 
 def clean_word(text):
     return(''.join(char for char in text if char in
-    ascii_letters or car -- " ")).lower()
+    ascii_letters or car == " ")).lower()
     
 def main():
     with open(sys.argv[1], 'r') as filename:
